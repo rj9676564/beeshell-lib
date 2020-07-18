@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "create-react-class": "^15.6.3",
+    "moment": "^2.27.0",
     "react": "16.13.1",
     "react-hot-loader": "^4.12.21",
     "react-native": "0.63.1",
