@@ -34,6 +34,7 @@ import {BottomModal} from "./src/components/BottomModal";
 import {Calendar} from "./src/components/Calendar";
 import {Cascader} from "./src/components/Cascader";
 import {optionsX} from "./data/demoData";
+import {ThemeContext, ThemeProvider} from "./src/common/theme/ThemeProvider";
 
 class App extends React.Component {
     constructor(props) {
@@ -50,7 +51,7 @@ class App extends React.Component {
         let actionsheet: Actionsheet;
         let bottomModal: BottomModal;
         return (
-            <View>
+            <ThemeProvider>
                 <StatusBar barStyle="dark-content"/>
                 <SafeAreaView>
                     <ScrollView
@@ -141,7 +142,7 @@ class App extends React.Component {
                         </View>
                     </BottomModal>
                 </SafeAreaView>
-            </View>);
+            </ThemeProvider>);
     }
 }
 
